@@ -11,6 +11,7 @@ namespace HelloProject130Batch
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to 130batch");
+            Console.WriteLine("----------");
             Console.ReadLine();
         }
     }
