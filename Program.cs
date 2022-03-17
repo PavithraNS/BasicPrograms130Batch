@@ -13,6 +13,7 @@ namespace HelloProject130Batch
             Console.WriteLine("Welcome to 130batch");
             Console.WriteLine("----------");
             Console.WriteLine("Remote changing modified by 2nd developer");
+            Console.WriteLine("Creating conflict from remote");
             Console.ReadLine();
         }
     }
