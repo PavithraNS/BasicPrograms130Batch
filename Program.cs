@@ -19,18 +19,19 @@ namespace HelloProject130Batch
             //Human human = new Human();
             //human.HumanDetails();
             //Human.Speak();
-            SwapTwoNumbers swap = new SwapTwoNumbers();
-            swap.first = 10;
-            SwapTwoNumbers swapTwoNumbers2 = new SwapTwoNumbers();
-            swapTwoNumbers2.first=30;
-            SwapTwoNumbers.third = 40;
-            Console.WriteLine("first object:"+ swap.first+ " static " +SwapTwoNumbers.third);
-            Console.WriteLine("second object:" + swapTwoNumbers2.first+ " static " + SwapTwoNumbers.third);
-            Console.WriteLine("after modifying static variable");
-            SwapTwoNumbers.third = 56;
-            Console.WriteLine("first object:" + swap.first + " static " + SwapTwoNumbers.third);
-            Console.WriteLine("second object:" + swapTwoNumbers2.first + " static " + SwapTwoNumbers.third);
+            //SwapTwoNumbers swap = new SwapTwoNumbers();
+            //swap.first = 10;
+            //SwapTwoNumbers swapTwoNumbers2 = new SwapTwoNumbers();
+            //swapTwoNumbers2.first=30;
+            //SwapTwoNumbers.third = 40;
+            //Console.WriteLine("first object:"+ swap.first+ " static " +SwapTwoNumbers.third);
+            //Console.WriteLine("second object:" + swapTwoNumbers2.first+ " static " + SwapTwoNumbers.third);
+            //Console.WriteLine("after modifying static variable");
+            //SwapTwoNumbers.third = 56;
+            //Console.WriteLine("first object:" + swap.first + " static " + SwapTwoNumbers.third);
+            //Console.WriteLine("second object:" + swapTwoNumbers2.first + " static " + SwapTwoNumbers.third);
             //Console.WriteLine("static varibel:"+ SwapTwoNumbers.third);
+            Fibonocci.FindNumberOfFiboncciSeries();
             Console.ReadLine();
         }
     }
