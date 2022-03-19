@@ -8,7 +8,10 @@ namespace HelloProject130Batch
 {
     class SwapTwoNumbers
     {
+        //declaration of varibels
         public int first,second,temp;
+        //static varible
+        public static int third;
 
         public void SwapNumbers()
         {
