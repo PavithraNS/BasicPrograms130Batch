@@ -7,31 +7,44 @@ using System.Threading.Tasks;
 
 namespace HelloProject130Batch
 {
-    class Program:Object
+    class Program
     {
         static void Main(string[] args)
         {
-            //Console.WriteLine("Welcome to 130batch");
-            //Console.WriteLine("----------");
-            //Console.WriteLine("Remote changing modified by 2nd developer");
-            //Console.WriteLine("Local changes creating conflict");
-            //Console.WriteLine("Creating conflict from remote");
-            //Human human = new Human();
-            //human.HumanDetails();
-            //Human.Speak();
-            //SwapTwoNumbers swap = new SwapTwoNumbers();
-            //swap.first = 10;
-            //SwapTwoNumbers swapTwoNumbers2 = new SwapTwoNumbers();
-            //swapTwoNumbers2.first=30;
-            //SwapTwoNumbers.third = 40;
-            //Console.WriteLine("first object:"+ swap.first+ " static " +SwapTwoNumbers.third);
-            //Console.WriteLine("second object:" + swapTwoNumbers2.first+ " static " + SwapTwoNumbers.third);
-            //Console.WriteLine("after modifying static variable");
-            //SwapTwoNumbers.third = 56;
-            //Console.WriteLine("first object:" + swap.first + " static " + SwapTwoNumbers.third);
-            //Console.WriteLine("second object:" + swapTwoNumbers2.first + " static " + SwapTwoNumbers.third);
-            //Console.WriteLine("static varibel:"+ SwapTwoNumbers.third);
-            Fibonocci.FindNumberOfFiboncciSeries();
+            Console.WriteLine("Please choose program number to execute");
+            Console.WriteLine("1:Human program\n2:SwapTwoNumbers\n3:Fibonocie\n5:Reverse number\n4:exit");
+            int option=Convert.ToInt32(Console.ReadLine());
+            switch (option)
+            {
+                case 1:
+                    // code block
+                    Human human = new Human();
+                    human.HumanDetails();
+                    Human.Speak();
+                    break;
+                case 2:
+                    // code block
+                    SwapTwoNumbers swap = new SwapTwoNumbers();
+                    swap.SwapNumbers();
+                    break;
+                case 3:
+                    // code block
+                    Fibonocci.FindNumberOfFiboncciSeries();
+                    break;
+                case 4:
+                    // code block
+                    return;
+                case 5:
+                    // code block
+                    Console.WriteLine("enter number to make reverse");
+                    int numb = Convert.ToInt32(Console.ReadLine());
+                    ReverseNumber.FindReverse(numb);
+                    break;
+                default:
+                    // code block
+                    Console.WriteLine("please choose number within given range");
+                    break;
+            }             
             Console.ReadLine();
         }
     }

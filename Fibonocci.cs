@@ -11,7 +11,7 @@ namespace HelloProject130Batch
         //instance varibles
 
         public static void FindNumberOfFiboncciSeries()
-        {
+        {           
             int first = 0, second = 1, res = 0;
             int length = 0; //10
             Console.WriteLine("Please enter n value to generate numb of fibonocci series");
