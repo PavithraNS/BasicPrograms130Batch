@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Addition.cs" />
     <Compile Include="Fibonocci.cs" />
     <Compile Include="Human.cs" />
     <Compile Include="Program.cs" />

@@ -8,16 +8,26 @@ namespace HelloProject130Batch
 {
     class ReverseNumber
     {
-        public static void FindReverse(int number)
+        public static void FindReverse(int number) //method parameter
         {
+            int actualNumber = number;
+            
             int remainder = 0, reverse = 0;
-            while (number>0)
+            while (number > 0)
             {
                 remainder = number % 10; //1234%10=4
                 reverse = (reverse * 10) + remainder; //4
                 number = number / 10; //123
             }
             Console.WriteLine(reverse);
+            if(actualNumber== reverse)
+            {
+                Console.WriteLine("Given number is polyndrome");
+            }
+            else
+            {
+                Console.WriteLine("Given number is not polyndrome");
+            }
         }
     }
 }
